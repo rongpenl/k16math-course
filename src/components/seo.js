@@ -63,15 +63,21 @@ const SEO = ({ title, description }) => (
                     content: pageDesc,
                 },
             ]
-
+            const script = [{
+                type: 'text/javascript',
+                src:'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML',
+            }]
             return (
-                <Helmet defer={false} htmlAttributes={{ lang }} title={pageTitle} meta={meta}>
+                <Helmet defer={false} htmlAttributes={{ lang }} title={pageTitle} meta={meta} script={script}>
                     {siteMetadata.fonts && (
                         <link
                             href={`https://fonts.googleapis.com/css?family=${siteMetadata.fonts}`}
                             rel="stylesheet"
                         />
                     )}
+                    <header>
+                        <script type="text/javascript" src="../../mathjax/MathJax.js"></script>
+                    </header>
                 </Helmet>
             )
         }}
@@ -82,15 +88,15 @@ export default SEO
 
 const query = graphql`
     query DefaultSEOQuery {
-        site {
-            siteMetadata {
-                title
+                        site {
+                    siteMetadata {
+                        title
                 description
-                slogan
-                siteUrl
-                twitter
-                fonts
+                    slogan
+                    siteUrl
+                    twitter
+                    fonts
+                }
             }
         }
-    }
-`
+    `
