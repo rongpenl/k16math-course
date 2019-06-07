@@ -62,7 +62,7 @@ const Layout = ({ isHome, title, description, children }) => {
                                     <section className={classes.footerSection}>
                                         <H3>About myself</H3>
                                         <img
-                                            src="/profile.png"
+                                            src="/icon.png"
                                             alt=""
                                             className={classes.profile}
                                         />

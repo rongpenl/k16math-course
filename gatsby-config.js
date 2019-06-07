@@ -101,7 +101,7 @@ module.exports = {
                 background_color: meta.theme,
                 theme_color: meta.theme,
                 display: `minimal-ui`,
-                icon: `static/icon.svg`,
+                icon: `static/icon.png`,
             },
         },
         `gatsby-plugin-offline`,

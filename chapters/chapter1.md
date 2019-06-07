@@ -1,9 +1,9 @@
 ---
-title: 'Chapter 1: How to use this website and Python basics'
+title: 'Chapter 1: How to use this website?'
 description:
-  "This chapter will teach you what a lesson looks like on this website. It will also teach you some basic knowledge about a programming language called Python. All you need to do is some occasional clicking."
+  "Let's go over some basics about this website."
 prev: /chapter1
-next: /chapter1
+next: /chapter2
 type: chapter
 id: 1
 ---
@@ -17,7 +17,9 @@ id: 1
 
 <exercise id="2" title="Use Python in this website">
 
-Welcome to lesson two. In this lesson, you will run two lines of Python code and learn to use the interactive environment. The first lesson is as simple as $1+1=2$!
+Starting from this section, you will learn some Python basics if you don't have previous experience in it. Those materials are optional but I highly recommend you to try it without checking the answers. 
+
+In this lesson, you will run two lines of Python code and learn to use the interactive environment. The first example is as simple as $1+1=2$!
 
 ### Python is talkative!
 
